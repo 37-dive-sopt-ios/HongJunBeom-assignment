@@ -5,8 +5,8 @@
 //  Created by 홍준범 on 10/30/25.
 //
 
-import Foundation
 import UIKit
+
 import SnapKit
 
 protocol SearchDelegate: AnyObject {
