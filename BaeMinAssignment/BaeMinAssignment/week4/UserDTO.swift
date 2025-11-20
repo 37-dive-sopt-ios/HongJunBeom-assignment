@@ -17,14 +17,14 @@ struct UserResponse: Decodable {
     public let status: String
 }
 
-///// 회원가입 요청 모델
-//struct RegisterRequest: Encodable {
-//    public let username: String
-//    public let password: String
-//    public let name: String
-//    public let email: String
-//    public let age: Int
-//}
+/// 회원가입 요청 모델
+struct RegisterRequest: Encodable {
+    let username: String
+    let password: String
+    let name: String
+    let email: String
+    let age: Int
+}
 
 /// 로그인 요청 모델
 struct LoginRequest: Encodable {
