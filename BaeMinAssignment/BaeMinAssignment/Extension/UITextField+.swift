@@ -26,4 +26,3 @@ extension UITextField {
         addRightPadding(rightAmount)
     }
 }
-
