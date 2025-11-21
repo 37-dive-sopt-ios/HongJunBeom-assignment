@@ -106,11 +106,9 @@ final class WelcomeViewController_Network: BaseViewController {
     // MARK: - Actions
     
     @objc private func getUserButtonTapped() {
-        print("buttonTapped")
         Task {
             guard let id = userId else { return }
             
-            print(userId ?? 0)
             await performGetUser(id: id)
         }
     }
@@ -142,7 +140,6 @@ final class WelcomeViewController_Network: BaseViewController {
                 await performUpdateUser(id: id, name: name, email: email, age: age)
             }
         }
-        print("buttonTapped")
     }
     
     @objc private func deleteUserButtonTapped() {
@@ -170,7 +167,6 @@ final class WelcomeViewController_Network: BaseViewController {
             print("🚨 [Register Unknown Error] \(error)")
             showAlert(title: "정보조회 실패", message: error.localizedDescription)
         }
-        
         loadingIndicator.stopAnimating()
     }
     
@@ -231,7 +227,6 @@ final class WelcomeViewController_Network: BaseViewController {
         button.layer.cornerRadius = 8
         return button
     }
-    
     
     private func showDeleteConfirmation() {
 
