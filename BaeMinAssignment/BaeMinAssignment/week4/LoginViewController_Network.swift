@@ -295,6 +295,8 @@ final class LoginViewController_Network: BaseViewController {
     
     private func navigateToWelcome(userId: Int, userName: String) {
         let welcomeVC = WelcomeViewController_Network()
+        welcomeVC.userId = userId
+        welcomeVC.userName = userName
         navigationController?.pushViewController(welcomeVC, animated: true)
     }
 }

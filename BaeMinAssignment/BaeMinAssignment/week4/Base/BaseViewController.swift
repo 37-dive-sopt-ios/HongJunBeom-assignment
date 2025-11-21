@@ -49,6 +49,7 @@ open class BaseViewController: UIViewController, Alertable, LoadingIndicatorable
         
         // 탭 제스처로 키보드 닫기
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(tapGesture)
     }
     
