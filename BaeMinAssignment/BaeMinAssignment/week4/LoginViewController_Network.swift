@@ -28,7 +28,6 @@ final class LoginViewController_Network: BaseViewController {
         textField.placeholder = "Username (예: johndoe)"
         textField.borderStyle = .roundedRect
         textField.autocapitalizationType = .none
-        textField.text = "mj"  // 테스트용 기본값
         textField.addPadding()
         return textField
     }()
@@ -38,7 +37,6 @@ final class LoginViewController_Network: BaseViewController {
         textField.placeholder = "Password (예: P@ssw0rd!)"
         textField.borderStyle = .roundedRect
         textField.isSecureTextEntry = true
-        textField.text = "Aa1234!@"  // 테스트용 기본값
         textField.addPadding()
         return textField
     }()
@@ -47,7 +45,6 @@ final class LoginViewController_Network: BaseViewController {
         let textField = UITextField()
         textField.placeholder = "이름 (예: 홍길동)"
         textField.borderStyle = .roundedRect
-        textField.text = "이명진"  // 테스트용 기본값
         textField.addPadding()
         return textField
     }()
@@ -58,7 +55,6 @@ final class LoginViewController_Network: BaseViewController {
         textField.borderStyle = .roundedRect
         textField.keyboardType = .emailAddress
         textField.autocapitalizationType = .none
-        textField.text = "test@naver.com"  // 테스트용 기본값
         textField.addPadding()
         return textField
     }()
@@ -68,7 +64,6 @@ final class LoginViewController_Network: BaseViewController {
         textField.placeholder = "나이 (예: 25)"
         textField.borderStyle = .roundedRect
         textField.keyboardType = .numberPad
-        textField.text = "29"  // 테스트용 기본값
         textField.addPadding()
         return textField
     }()

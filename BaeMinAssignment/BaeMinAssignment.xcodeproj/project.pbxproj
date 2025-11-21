@@ -20,6 +20,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				"week4/UIView+.swift",
 			);
 			target = F72F48482EA957E200681A9B /* BaeMinAssignment */;
 		};
