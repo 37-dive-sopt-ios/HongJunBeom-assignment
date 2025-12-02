@@ -5,8 +5,8 @@
 //  Created by 홍준범 on 10/23/25.
 //
 
-import Foundation
 import UIKit
+
 import SnapKit
 
 protocol BaeMinWelcomeViewControllerDelegate: AnyObject {
@@ -60,6 +60,17 @@ class BaeMinWelcomeViewController: UIViewController {
         return button
     }()
     
+    private lazy var goToMainButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("메인으로 가기", for: .normal)
+        button.setTitleColor(.baeminWhite, for: .normal)
+        button.titleLabel?.font = UIFont.font(.pretendardBold, ofSize: 18)
+        button.layer.cornerRadius = 4
+        button.backgroundColor = .baeminMint500
+        button.addTarget(self, action: #selector(didTapGoToMain), for: .touchUpInside)
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -70,7 +81,7 @@ class BaeMinWelcomeViewController: UIViewController {
     }
     
     private func setLayout() {
-        [navigationView, baeminImageView, welcomeLabel1, welcomeLabel2, backButton].forEach {
+        [navigationView, baeminImageView, welcomeLabel1, welcomeLabel2, backButton, goToMainButton].forEach {
             view.addSubview($0)
         }
         
@@ -94,6 +105,12 @@ class BaeMinWelcomeViewController: UIViewController {
             $0.centerX.equalToSuperview()
         }
         
+        goToMainButton.snp.makeConstraints {
+            $0.bottom.equalTo(backButton.snp.top).offset(-12)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(52)
+        }
+        
         backButton.snp.makeConstraints {
             $0.bottom.equalToSuperview().inset(48)
             $0.leading.trailing.equalToSuperview().inset(16)
@@ -109,6 +126,16 @@ class BaeMinWelcomeViewController: UIViewController {
                 welcomeLabel2.text = "\(name)님 반가워요"
             }
         }
+    }
+    
+    @objc
+    private func didTapGoToMain() {
+        pushToMainViewController()
+    }
+    
+    private func pushToMainViewController() {
+        let vc = TabBarController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

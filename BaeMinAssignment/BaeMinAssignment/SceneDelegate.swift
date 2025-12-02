@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
       // 3.
         let vc = UINavigationController(rootViewController: BaeMinLoginViewController())
+//        let vc = TabBarController()
       // 4.
         window.rootViewController = vc
       // 5.
