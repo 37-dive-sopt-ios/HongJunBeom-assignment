@@ -20,4 +20,9 @@ extension UITextField {
         self.rightView = paddingView
         self.rightViewMode = .always
     }
+    
+    func addPadding(leftAmount: CGFloat = 10, rightAmount: CGFloat = 10) {
+        addLeftPadding(leftAmount)
+        addRightPadding(rightAmount)
+    }
 }

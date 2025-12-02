@@ -19,10 +19,10 @@ class TabBarController: UITabBarController {
         let firstVC = BaeMinViewController()
         firstVC.tabBarItem = UITabBarItem(title: "홈", image: .home, selectedImage: .home)
         
-        let secondVC = UIViewController()
+        let secondVC = LoginViewController_Network()
         secondVC.view.backgroundColor = .baeminBackground
         secondVC.title = "Second"
-        secondVC.tabBarItem = UITabBarItem(title: "장보기·쇼핑", image: .shoppingBag, selectedImage: .shoppingBag)
+        secondVC.tabBarItem = UITabBarItem(title: "서버", image: .shoppingBag, selectedImage: .shoppingBag)
         
         let thirdVC = UIViewController()
         thirdVC.view.backgroundColor = .red

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F722722D2ECF6A91009575A5 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = F722722C2ECF6A91009575A5 /* Then */; };
 		F72F48672EA95B0000681A9B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F72F48662EA95B0000681A9B /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -19,6 +20,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				"week4/UIView+.swift",
 			);
 			target = F72F48482EA957E200681A9B /* BaeMinAssignment */;
 		};
@@ -41,6 +43,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72F48672EA95B0000681A9B /* SnapKit in Frameworks */,
+				F722722D2ECF6A91009575A5 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 			name = BaeMinAssignment;
 			packageProductDependencies = (
 				F72F48662EA95B0000681A9B /* SnapKit */,
+				F722722C2ECF6A91009575A5 /* Then */,
 			);
 			productName = BaeMinAssignment;
 			productReference = F72F48492EA957E200681A9B /* BaeMinAssignment.app */;
@@ -115,6 +119,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				F72F48652EA95B0000681A9B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F722722B2ECF6A91009575A5 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F72F484A2EA957E200681A9B /* Products */;
@@ -354,6 +359,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F722722B2ECF6A91009575A5 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		F72F48652EA95B0000681A9B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -365,6 +378,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F722722C2ECF6A91009575A5 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F722722B2ECF6A91009575A5 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		F72F48662EA95B0000681A9B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F72F48652EA95B0000681A9B /* XCRemoteSwiftPackageReference "SnapKit" */;
